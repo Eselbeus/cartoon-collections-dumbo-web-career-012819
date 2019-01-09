@@ -6,7 +6,7 @@ end
 
 def summon_captain_planet(planeteer_calls)
   final = planeteer_calls.map do |call|
-    "#{call[0].upcase}#{call[1]} "
+    "#{call[0].upcase}#{call[1..-1]}!"
   end
   return final
 end
